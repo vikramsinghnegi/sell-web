@@ -13,11 +13,15 @@ export async function createOrder(amount) {
 export async function verifyPayment(payload) {
   const res = await fetch(`${API_URL}/api/payment/verify`, {
     method: "POST",
-    headers: { "Content-Type": "application/json" }),
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(payload),
   });
+
   return res.json();
 }
+
 
 export async function getProducts() {
   const res = await fetch(`${API_URL}/api/products`, {
