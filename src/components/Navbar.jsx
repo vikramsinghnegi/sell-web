@@ -28,7 +28,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("home")}
               className="font-bold text-xl hover:text-gray-200 transition"
             >
-              PDFbook
+              PDFbook ho gya hai
             </button>
           </div>
 
